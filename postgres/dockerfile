@@ -1,0 +1,9 @@
+FROM postgres:16.2
+
+# Execute init scripts
+## These only have to be copied into /docker-entrypoint-initdb.d/
+COPY init_pg.sql /docker-entrypoint-initdb.d/
+
+# For lab
+RUN mkdir lab
+COPY scripts /lab/scripts
