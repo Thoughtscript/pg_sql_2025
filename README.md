@@ -4,11 +4,22 @@
 
 ## Setup and Use
 
+Docker Compose:
 ```bash
 docker compose up
 ```
 
+Connection settings:
+```
+Host:       localhost:5432
+User:       testuser
+Password:   testpassword
+Database:   postgres
+```
+
 ### Scripts
+
+Execute SQL through the Docker Shell:
 
 ```bash
 # Exec in and login
@@ -22,6 +33,7 @@ postgres=# SELECT * FROM jsonexample;
 :q 
 ```
 
+Execute supplied scripts:
 ```bash
 psql -U postgres -f /lab/scripts/restart.sql
 ```
