@@ -49,9 +49,15 @@ psql -U postgres -f /lab/scripts/joins.sql
    * `EXPLAIN <MY_QUERY>`
 4. Check for dangling `,` and `:`. 
    * Make sure to add semicolons `:` to the end of a statement/command/expression!
+5. `LIMIT` keyword is supported:
+   * `TOP` is not.
+   * `LIMIT` is appended (whereas `TOP` is prepended).
+6. Text to Number formatting:
+   * https://www.postgresql.org/docs/current/functions-formatting.html
 
 ## Resources and Links
 
 1. https://www.datacamp.com/blog/top-postgresql-interview-questions-for-all-levels
 2. https://www.interviewquery.com/p/postgresql-interview-questions
 3. https://www.postgresql.org/docs/current/app-psql.html
+4. https://www.postgresql.org/docs/current/functions-formatting.html
