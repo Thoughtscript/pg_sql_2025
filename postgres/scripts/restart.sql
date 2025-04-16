@@ -7,4 +7,7 @@ BEGIN;
     
     DROP TABLE IF EXISTS joinexamplea;
     DROP TABLE IF EXISTS joinexampleb;
+
+    DROP TABLE IF EXISTS employee_performance;
+    DROP TABLE IF EXISTS employee_holidays;
 COMMIT;

@@ -44,6 +44,8 @@ psql -U postgres -f /lab/scripts/materialized_view.sql
 psql -U postgres -f /lab/scripts/example.sql
 psql -U postgres -f /lab/scripts/json.sql
 psql -U postgres -f /lab/scripts/joins.sql
+psql -U postgres -f /lab/scripts/window.sql
+psql -U postgres -f /lab/scripts/extract.sql
 
 # Exit
 \q
@@ -66,6 +68,13 @@ psql -U postgres -f /lab/scripts/joins.sql
    * `LIMIT` is appended (whereas `TOP` is prepended).
 6. Text to Number formatting:
    * https://www.postgresql.org/docs/current/functions-formatting.html
+7. **Window Functions** such as `<MY_FUNCTION()> OVER(PARTITION BY <MY_GROUPING_FIELD> <MY_OPTIONAL_FRAME_CLASE> ORDER BY <MY_SORTING_FIELD>)`:
+   * Used to compare ordered rows to other rows of that ordering.
+   * Note the optional **Frame Clause**: `ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING`.
+8. `EXTRACT(<MY_TIME_UNIT> FROM <MY_DATE_OR_TIME_ENTRY>)`
+   *  `EXTRACT(MONTH FROM start_date)`
+   *  Better than parsing Text or String.
+   * `GROUP BY` must also be present within.
 
 ## Resources and Links
 
@@ -73,3 +82,5 @@ psql -U postgres -f /lab/scripts/joins.sql
 2. https://www.interviewquery.com/p/postgresql-interview-questions
 3. https://www.postgresql.org/docs/current/app-psql.html
 4. https://www.postgresql.org/docs/current/functions-formatting.html
+5. https://www.postgresql.org/docs/current/tutorial-window.html
+6. https://www.postgresql.org/docs/current/datatype-datetime.html#DATATYPE-DATETIME-INPUT-DATES
