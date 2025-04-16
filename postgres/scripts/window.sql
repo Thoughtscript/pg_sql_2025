@@ -93,6 +93,12 @@ COMMIT;
 
     The adjusted query below displays something closer to the intended target output. 
     (Since in the original output example - the first quarter is always omitted.)
+
+    Also, there's a bit of ambiguity between the problem statement wording and the above implementation: 
+    
+    A.) 1 prior quarter before.
+    
+    B.) Or all prior quarters of the same year.
 */
 
 BEGIN;
