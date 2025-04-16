@@ -35,12 +35,12 @@ rating of each employee from the previous quarter. Create a SQL query to solve t
 year 	quarter	    employee_id	    avg_performance_rating	    max_performance_rating	    min_performance_rating
 2022	2	        001	            3.6	                        3.7	                        3.5
 2022	3	        001	            3.7	                        3.8	                        3.5
-2022	4	        001	            3.66                        3.8                         3.5
+2022	4	        001	            3.66                        3.8	                        3.5
 2022	2	        002	            4.1	                        4.1	                        4.1
-2022	3	        002             4.0	                        4.1	                        3.9
+2022	3	        002	            4.0	                        4.1	                        3.9
 2022	4	        002	            4.1	                        4.3	                        3.9
 2022	2	        003	            4.0	                        4.0	                        4.0
-2022	3	        003	            3.85                        4.0                         3.7
+2022	3	        003	            3.85                        4.0	                        3.7
 2022	4	        003	            3.9	                        4.0	                        3.7
 */
 
