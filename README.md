@@ -61,8 +61,8 @@ psql -U postgres -f /lab/scripts/extract.sql
 3. Common scenarios for `EXPLAIN`:
    * `EXPLAIN ANALYZE <MY_QUERY>` 
    * `EXPLAIN <MY_QUERY>`
-4. Check for dangling `,` and `:`. 
-   * Make sure to add semicolons `:` to the end of a statement/command/expression!
+4. Check for dangling `,` and `;`. 
+   * Make sure to add semicolons `;` to the end of a statement/command/expression!
 5. `LIMIT` keyword is supported:
    * `TOP` is not.
    * `LIMIT` is appended (whereas `TOP` is prepended).
