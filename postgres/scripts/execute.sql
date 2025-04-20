@@ -1,12 +1,16 @@
 -- PG Trigger, Function, and Procedure Examples
 BEGIN;
-    DROP TRIGGER IF EXISTS list_prior ON example;
-    DROP TABLE IF EXISTS example;
     DROP FUNCTION IF EXISTS list_rows;
     DROP FUNCTION IF EXISTS my_add;
     DROP FUNCTION IF EXISTS find_msg_by_id;
     DROP FUNCTION IF EXISTS find_id_by_msg;
     DROP PROCEDURE IF EXISTS example_proc;
+    DROP FUNCTION IF EXISTS trigger_func CASCADE;
+COMMIT;
+
+BEGIN;
+    DROP TRIGGER IF EXISTS list_prior ON example;
+    DROP TABLE IF EXISTS example;
 COMMIT;
 
 BEGIN;
