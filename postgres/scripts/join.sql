@@ -1,6 +1,10 @@
 -- PG JOIN Examples
 BEGIN;
-  DROP TABLE IF EXISTS joinexamplea;
+    DROP TABLE IF EXISTS joinexamplea;
+    DROP TABLE IF EXISTS joinexampleb;
+COMMIT;
+
+BEGIN;
   CREATE TABLE joinexamplea (
     id INT,
     text VARCHAR
@@ -8,7 +12,6 @@ BEGIN;
 COMMIT;
 
 BEGIN;
-  DROP TABLE IF EXISTS joinexampleb;
   CREATE TABLE joinexampleb (
     id INT,
     text VARCHAR,

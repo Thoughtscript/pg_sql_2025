@@ -1,8 +1,11 @@
 -- PG Explain Plan Examples
 BEGIN;
-    -- Create Table
     DROP TABLE IF EXISTS example;
-     CREATE TABLE example (
+COMMIT;
+
+BEGIN;
+    -- Create Table
+    CREATE TABLE example (
         id INT,
         msg VARCHAR
     );

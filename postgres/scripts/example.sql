@@ -1,7 +1,10 @@
 -- PG Basic Queries Examples
 BEGIN;
-    -- Create Table
     DROP TABLE IF EXISTS example;
+COMMIT;
+
+BEGIN;
+    -- Create Table
     CREATE TABLE example (
         id INT PRIMARY KEY,
         msg VARCHAR

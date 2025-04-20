@@ -43,9 +43,10 @@ psql -U postgres -f /lab/scripts/explain.sql
 psql -U postgres -f /lab/scripts/materialized_view.sql
 psql -U postgres -f /lab/scripts/example.sql
 psql -U postgres -f /lab/scripts/json.sql
-psql -U postgres -f /lab/scripts/joins.sql
+psql -U postgres -f /lab/scripts/join.sql
 psql -U postgres -f /lab/scripts/window.sql
 psql -U postgres -f /lab/scripts/extract.sql
+psql -U postgres -f /lab/scripts/execute.sql
 
 # Exit
 \q
@@ -75,6 +76,9 @@ psql -U postgres -f /lab/scripts/extract.sql
    *  `EXTRACT(MONTH FROM start_date)`
    *  Better than parsing Text or String.
    * `GROUP BY` must also be present within.
+9. `TRIGGERS` no longer support `PROCEDURES`, only `FUNCTIONS`.
+   * `PROCEDURES` are typically `CALL` and don't `RETURNS`.
+   * `FUNCTIONS` are `EXECUTE` and `RETURNS`.
 
 ## Resources and Links
 

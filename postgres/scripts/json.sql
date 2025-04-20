@@ -1,8 +1,10 @@
 -- PG JSON Examples
 BEGIN;
-  -- Create table after check.
   DROP TABLE IF EXISTS jsonexample;
-    
+COMMIT;
+
+BEGIN;
+  -- Create table after check.   
   CREATE TABLE jsonexample (
     id INT,
     json_col JSON,

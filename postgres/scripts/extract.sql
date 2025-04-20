@@ -1,6 +1,9 @@
 BEGIN;
-    -- Create Table
     DROP TABLE IF EXISTS employee_holidays;
+COMMIT;
+
+BEGIN;
+    -- Create Table
     -- https://www.postgresql.org/docs/current/datatype-datetime.html#DATATYPE-DATETIME-INPUT-DATES
     CREATE TABLE employee_holidays  (
         employee_id INT PRIMARY KEY,

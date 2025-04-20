@@ -1,9 +1,11 @@
 -- PG Window Function Examples
+BEGIN;
+    DROP TABLE IF EXISTS employee_performance;
+COMMIT;
 
 -- https://datalemur.com/blog/alight-solutions-sql-interview-questions
 BEGIN;
     -- Create Table
-    DROP TABLE IF EXISTS employee_performance;
     CREATE TABLE employee_performance (
         transaction_id INT PRIMARY KEY,
         employee_id VARCHAR,
